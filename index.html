@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork 05 - Tabs</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="tabs">
+                <nav class="tabs__items">
+                    <a href="#tab_1" class="tabs__item">Todo</a>
+                    <a href="#tab_2" class="tabs__item">Console Log</a>
+                    <a href="#tab_3" class="tabs__item">About</a>
+                </nav>
+                <div class="tabs__body">
+                    <div id="tab_1" class="tabs__block">
+                        <div class="tab-wrapper">
+                            <p class="todo__title">Todos</p>
+                            <form class="todo__form">
+                                <input type="text" class="todo__text-input" placeholder="Введите задачу" />
+                                <input type="number" class="todo__time-input" placeholder="Введите время задачи" />
+                                <button class="todo__create-button">Добавить</button>
+                            </form>
+                            <div class="flex">
+                                <button class="todo__sort-button done">Сортировка по done</button>
+                                <button class="todo__sort-button time">Сортировка по time</button>
+                            </div>
+                            <ul class="todo__list"></ul>
+                            <p class="todo__time">
+                                <span class="todo__time-message">Общее время:</span>
+                                <span class="todo__time-value"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="tab_2" class="tabs__block">
+                        <div class="tab-wrapper">
+                            <p class="todo__title">Сбор данных и вывод в консоль</p>
+                            <form class="tab_print_data__form">
+                                <div class="tab_print_data__container">
+                                    <input type="text" id="input_1" class="tab_print_data__text-input"
+                                        placeholder="Print some data for console" />
+                                    <input type="text" id="input_2" class="tab_print_data__text-input"
+                                        placeholder="Print some data for console" />
+                                    <input type="text" id="input_3" class="tab_print_data__text-input"
+                                        placeholder="Print some data for console" />
+                                    <button class="tab_print_data__button">Print to console</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="tab_3" class="tabs__block">
+                        <div class="tab-wrapper">
+                            <p class="todo__title">Description of Homework</p>
+                            <p class="tab_about">Разработать компонент ""Табы"" <br /><br />Разработать форму сбора
+                                данных
+                                из нескольких полей<br />
+                                и вывести данные из полей в виде объекта в консоль. <br /><br />
+                                Доработать Todo List на классах Js<br /><br />Task created by: Sergey Kartashov</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

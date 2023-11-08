@@ -1,0 +1,45 @@
+.todo {
+    &__title {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    &__form {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__text-input {
+        width: 100%;
+        margin-right: 4px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &.done {
+            .todo__item-text {
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+button {
+    padding: 5px;
+
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 20px;
+
+    .todo__sort-button:first-child {
+        margin-right: 20px;
+    }
+}
